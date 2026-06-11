@@ -67,9 +67,13 @@
 
 ### Окружение и графика
 - [24. Окружение, ландшафт, вода, Lumen](24-environment-landscape-water-lighting.md)
+- [25. Материалы](25-materials.md)
 - [22. VFX и Niagara](22-vfx-niagara.md)
 - [23. Физика (Chaos)](23-physics.md)
 - [21. Аудио и Patchwork](21-audio-patchwork.md)
+
+### Мультиплеер и game flow
+- [26. Команды, раунды, победа](26-multiplayer-teams-rounds.md)
 
 ### Контекст и тренды
 - [05. Технологии UEFN (обзор)](05-latest-tech.md)
@@ -108,6 +112,8 @@
 | 22 | [vfx-niagara](22-vfx-niagara.md) | VFX Spawner, Niagara, управление из Verse |
 | 23 | [physics](23-physics.md) | Chaos, FortPhysics, импульсы/силы (пропы и персонажи) |
 | 24 | [environment-landscape-water-lighting](24-environment-landscape-water-lighting.md) | террейн, листва, вода, Lumen-свет |
+| 25 | [materials](25-materials.md) | Material Editor, узлы, инстансы, SetMaterial из Verse |
+| 26 | [multiplayer-teams-rounds](26-multiplayer-teams-rounds.md) | команды, плейспейс, раунды, победа |
 
 ---
 
@@ -129,6 +135,7 @@
 | `ai/reactive_guard_behavior.verse` | реактивный страж (awareness+actions) | 18 |
 | `persistence/player_progress.verse` | прогресс с версионированием | 15 |
 | `games/brainrot_income.verse` | каркас экономики «Steal a Brainrot» | 19 |
+| `games/team_match_manager.verse` | баланс команд + победа по выбиванию | 26 |
 | `audio/music_manager.verse` | BGM-менеджер + one-shot SFX | 21 |
 | `devices/explosion_on_event_device.verse` | one-shot VFX (взрыв) по событию | 22 |
 | `devices/physics_launcher.verse` | физ-импульс: запуск пропа + отброс игрока | 23 |
