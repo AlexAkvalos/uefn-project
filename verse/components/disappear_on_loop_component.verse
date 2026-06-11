@@ -5,7 +5,8 @@
 using { /Verse.org }
 using { /Verse.org/Native }
 using { /Verse.org/Simulation }
-using { /UnrealEngine.com/Temporary/SceneGraph }
+using { /Verse.org/SceneGraph }   # ВАЖНО: с v41.00 (июнь 2026) неймспейс сменился.
+                                   # Старый /UnrealEngine.com/SceneGraph больше НЕ компилируется.
 using { /UnrealEngine.com/Temporary/Diagnostics }
 
 # class<final_super>(component) — наследуемся от базового component.

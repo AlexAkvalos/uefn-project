@@ -37,7 +37,10 @@ uefn-project/
 │   ├── 06-whats-new.md        ← что нового в сезонах 38–39
 │   ├── 07-scene-graph.md      ← устройства vs компоненты (entity-component)
 │   ├── 08-learning-resources.md← YouTube, курсы, сообщества, монетизация
-│   └── 09-cool-features.md    ← классные фишки и приёмы (из YouTube и X)
+│   ├── 09-cool-features.md    ← классные фишки и приёмы (из YouTube и X)
+│   ├── 10-fresh-2026.md       ← 🔥 самое свежее: релизы v40–v41, AI-ассистент, breaking changes
+│   ├── 11-future-ue6-roadmap.md← Unreal Engine 6, роадмап, Creator Economy 2.0
+│   └── 12-advanced-patterns.md← продвинутые паттерны Verse (concurrency, persistence, raycast)
 └── verse/                     ← исходный Verse-код
     ├── devices/               ← устройства (creative_device)
     │   ├── hello_world_device.verse
@@ -77,6 +80,8 @@ UEFN создаёт Verse-файлы внутри плагина проекта:
 Подробнее — в [`docs/01-getting-started.md`](docs/01-getting-started.md).
 
 > 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md). Архитектура entity-component — в [`docs/07-scene-graph.md`](docs/07-scene-graph.md). Видео, курсы и сообщества — в [`docs/08-learning-resources.md`](docs/08-learning-resources.md). Классные фишки и приёмы топ-разработчиков — в [`docs/09-cool-features.md`](docs/09-cool-features.md).
+
+> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md).
 
 ---
 

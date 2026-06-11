@@ -66,8 +66,11 @@ Initialized → AddedToScene → BeginSimulation
 using { /Verse.org }
 using { /Verse.org/Native }
 using { /Verse.org/Simulation }
-using { /UnrealEngine.com/Temporary/SceneGraph }
+using { /Verse.org/SceneGraph }   # с v41.00 (июнь 2026); старый /UnrealEngine.com/SceneGraph убран
 ```
+
+> ⚠️ **Breaking change v41.00:** неймспейс Scene Graph переехал на `/Verse.org/SceneGraph`.
+> Подробнее о свежих изменениях — в [10-fresh-2026.md](10-fresh-2026.md).
 
 ## Доступ к сущности и соседним компонентам
 
