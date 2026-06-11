@@ -60,6 +60,7 @@
 - [17. Custom Items & Inventory](17-custom-items-inventory.md)
 - [18. AI/NPC](18-ai-npc-scene-graph.md)
 - [20. Пропы, синематики, NPC](20-props-cinematics-npc.md)
+- [21. Аудио и Patchwork](21-audio-patchwork.md)
 - [19. Жанр «Steal a Brainrot»](19-steal-a-brainrot.md)
 
 ### Контекст и тренды
@@ -95,6 +96,7 @@
 | 18 | [ai-npc-scene-graph](18-ai-npc-scene-graph.md) | AI/NPC через Scene Graph |
 | 19 | [steal-a-brainrot](19-steal-a-brainrot.md) | жанр tycoon + кража юнитов |
 | 20 | [props-cinematics-npc](20-props-cinematics-npc.md) | пропы, синематики, NPC с ними |
+| 21 | [audio-patchwork](21-audio-patchwork.md) | аудио-устройства, Verse-API, Patchwork (живая музыка) |
 
 ---
 
@@ -116,6 +118,7 @@
 | `ai/reactive_guard_behavior.verse` | реактивный страж (awareness+actions) | 18 |
 | `persistence/player_progress.verse` | прогресс с версионированием | 15 |
 | `games/brainrot_income.verse` | каркас экономики «Steal a Brainrot» | 19 |
+| `audio/music_manager.verse` | BGM-менеджер + one-shot SFX | 21 |
 | `utils/log.verse` | канал логирования | 02 |
 
 ---

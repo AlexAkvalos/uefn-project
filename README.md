@@ -67,7 +67,8 @@ uefn-project/
 │   ├── 17-custom-items-inventory.md← Custom Items & Inventory (компоненты, крафт, UI)
 │   ├── 18-ai-npc-scene-graph.md← AI/NPC через Scene Graph (actions/awareness, спавн)
 │   ├── 19-steal-a-brainrot.md ← жанр «Steal a Brainrot» (tycoon + кража юнитов)
-│   └── 20-props-cinematics-npc.md← пропы, синематики, NPC с ними
+│   ├── 20-props-cinematics-npc.md← пропы, синематики, NPC с ними
+│   └── 21-audio-patchwork.md  ← аудио и Patchwork (живая музыка)
 └── verse/                     ← исходный Verse-код
     ├── devices/               ← устройства (creative_device)
     │   ├── hello_world_device.verse
@@ -89,6 +90,8 @@ uefn-project/
     │   └── player_progress.verse   ← пример: прогресс игрока с версионированием
     ├── games/                ← каркасы игровых режимов
     │   └── brainrot_income.verse   ← каркас экономики «Steal a Brainrot»
+    ├── audio/                ← звук на Verse
+    │   └── music_manager.verse     ← BGM-менеджер + one-shot SFX
     └── utils/
         └── log.verse          ← вспомогательный канал логирования
 ```
@@ -122,7 +125,7 @@ UEFN создаёт Verse-файлы внутри плагина проекта:
 
 > 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md). Архитектура entity-component — в [`docs/07-scene-graph.md`](docs/07-scene-graph.md). Видео, курсы и сообщества — в [`docs/08-learning-resources.md`](docs/08-learning-resources.md). Классные фишки и приёмы топ-разработчиков — в [`docs/09-cool-features.md`](docs/09-cool-features.md).
 
-> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md) · топовый HUD и UI на Verse — [`docs/13-ui-hud.md`](docs/13-ui-hud.md) · как делать устройства правильно — [`docs/14-device-best-practices.md`](docs/14-device-best-practices.md) · данные и сохранения — [`docs/15-data-and-persistence.md`](docs/15-data-and-persistence.md) · кастомное оружие — [`docs/16-custom-weapons.md`](docs/16-custom-weapons.md) · Custom Items & Inventory — [`docs/17-custom-items-inventory.md`](docs/17-custom-items-inventory.md) · AI/NPC через Scene Graph — [`docs/18-ai-npc-scene-graph.md`](docs/18-ai-npc-scene-graph.md) · жанр «Steal a Brainrot» — [`docs/19-steal-a-brainrot.md`](docs/19-steal-a-brainrot.md) · пропы/синематики/NPC — [`docs/20-props-cinematics-npc.md`](docs/20-props-cinematics-npc.md).
+> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md) · топовый HUD и UI на Verse — [`docs/13-ui-hud.md`](docs/13-ui-hud.md) · как делать устройства правильно — [`docs/14-device-best-practices.md`](docs/14-device-best-practices.md) · данные и сохранения — [`docs/15-data-and-persistence.md`](docs/15-data-and-persistence.md) · кастомное оружие — [`docs/16-custom-weapons.md`](docs/16-custom-weapons.md) · Custom Items & Inventory — [`docs/17-custom-items-inventory.md`](docs/17-custom-items-inventory.md) · AI/NPC через Scene Graph — [`docs/18-ai-npc-scene-graph.md`](docs/18-ai-npc-scene-graph.md) · жанр «Steal a Brainrot» — [`docs/19-steal-a-brainrot.md`](docs/19-steal-a-brainrot.md) · пропы/синематики/NPC — [`docs/20-props-cinematics-npc.md`](docs/20-props-cinematics-npc.md) · аудио и Patchwork — [`docs/21-audio-patchwork.md`](docs/21-audio-patchwork.md).
 
 ---
 
