@@ -65,6 +65,12 @@
 - [23. Физика (Chaos)](23-physics.md)
 - [19. Жанр «Steal a Brainrot»](19-steal-a-brainrot.md)
 
+### Окружение и графика
+- [24. Окружение, ландшафт, вода, Lumen](24-environment-landscape-water-lighting.md)
+- [22. VFX и Niagara](22-vfx-niagara.md)
+- [23. Физика (Chaos)](23-physics.md)
+- [21. Аудио и Patchwork](21-audio-patchwork.md)
+
 ### Контекст и тренды
 - [05. Технологии UEFN (обзор)](05-latest-tech.md)
 - [06. Что нового (сезоны 38–39)](06-whats-new.md)
@@ -101,6 +107,7 @@
 | 21 | [audio-patchwork](21-audio-patchwork.md) | аудио-устройства, Verse-API, Patchwork (живая музыка) |
 | 22 | [vfx-niagara](22-vfx-niagara.md) | VFX Spawner, Niagara, управление из Verse |
 | 23 | [physics](23-physics.md) | Chaos, FortPhysics, импульсы/силы (пропы и персонажи) |
+| 24 | [environment-landscape-water-lighting](24-environment-landscape-water-lighting.md) | террейн, листва, вода, Lumen-свет |
 
 ---
 
