@@ -34,12 +34,16 @@ uefn-project/
 │   ├── 03-devices.md          ← устройства и события
 │   ├── 04-project-structure.md← как устроен проект UEFN на диске
 │   ├── 05-latest-tech.md      ← обзор всех технологий UEFN (Scene Graph, физика, UI, AI…)
-│   └── 06-whats-new.md        ← что нового в сезонах 38–39
+│   ├── 06-whats-new.md        ← что нового в сезонах 38–39
+│   ├── 07-scene-graph.md      ← устройства vs компоненты (entity-component)
+│   └── 08-learning-resources.md← YouTube, курсы, сообщества, монетизация
 └── verse/                     ← исходный Verse-код
     ├── devices/               ← устройства (creative_device)
     │   ├── hello_world_device.verse
     │   ├── button_interaction_device.verse
     │   └── round_manager_device.verse
+    ├── components/            ← компоненты Scene Graph (новый подход)
+    │   └── disappear_on_loop_component.verse
     └── utils/
         └── log.verse          ← вспомогательный канал логирования
 ```
@@ -71,7 +75,7 @@ UEFN создаёт Verse-файлы внутри плагина проекта:
 
 Подробнее — в [`docs/01-getting-started.md`](docs/01-getting-started.md).
 
-> 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md).
+> 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md). Архитектура entity-component — в [`docs/07-scene-graph.md`](docs/07-scene-graph.md). Видео, курсы и сообщества — в [`docs/08-learning-resources.md`](docs/08-learning-resources.md).
 
 ---
 
