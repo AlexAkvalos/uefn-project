@@ -41,12 +41,15 @@ uefn-project/
 │   ├── 10-fresh-2026.md       ← 🔥 самое свежее: релизы v40–v41, AI-ассистент, breaking changes
 │   ├── 11-future-ue6-roadmap.md← Unreal Engine 6, роадмап, Creator Economy 2.0
 │   ├── 12-advanced-patterns.md← продвинутые паттерны Verse (concurrency, persistence, raycast)
-│   └── 13-ui-hud.md           ← топовый HUD и UI на Verse (UMG)
+│   ├── 13-ui-hud.md           ← топовый HUD и UI на Verse (UMG)
+│   └── 14-device-best-practices.md← как делать устройства правильно (архитектура, события, стиль)
 └── verse/                     ← исходный Verse-код
     ├── devices/               ← устройства (creative_device)
     │   ├── hello_world_device.verse
     │   ├── button_interaction_device.verse
-    │   └── round_manager_device.verse
+    │   ├── round_manager_device.verse
+    │   ├── pickup_device.verse        ← пример: single-responsibility + событие
+    │   └── score_manager_device.verse ← пример: менеджер (правила + состояние)
     ├── components/            ← компоненты Scene Graph (новый подход)
     │   └── disappear_on_loop_component.verse
     ├── ui/                    ← интерфейс на Verse (UMG)
@@ -84,7 +87,7 @@ UEFN создаёт Verse-файлы внутри плагина проекта:
 
 > 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md). Архитектура entity-component — в [`docs/07-scene-graph.md`](docs/07-scene-graph.md). Видео, курсы и сообщества — в [`docs/08-learning-resources.md`](docs/08-learning-resources.md). Классные фишки и приёмы топ-разработчиков — в [`docs/09-cool-features.md`](docs/09-cool-features.md).
 
-> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md) · топовый HUD и UI на Verse — [`docs/13-ui-hud.md`](docs/13-ui-hud.md).
+> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md) · топовый HUD и UI на Verse — [`docs/13-ui-hud.md`](docs/13-ui-hud.md) · как делать устройства правильно — [`docs/14-device-best-practices.md`](docs/14-device-best-practices.md).
 
 ---
 
