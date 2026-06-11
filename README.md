@@ -45,7 +45,8 @@ uefn-project/
 │   ├── 14-device-best-practices.md← как делать устройства правильно (архитектура, события, стиль)
 │   ├── 15-data-and-persistence.md← данные: типы, коллекции, сохранения, статы, аналитика
 │   ├── 16-custom-weapons.md   ← кастомное оружие (Custom Weapon Templates, v41.00)
-│   └── 17-custom-items-inventory.md← Custom Items & Inventory (компоненты, крафт, UI)
+│   ├── 17-custom-items-inventory.md← Custom Items & Inventory (компоненты, крафт, UI)
+│   └── 18-ai-npc-scene-graph.md← AI/NPC через Scene Graph (actions/awareness, спавн)
 └── verse/                     ← исходный Verse-код
     ├── devices/               ← устройства (creative_device)
     │   ├── hello_world_device.verse
@@ -59,6 +60,8 @@ uefn-project/
     │   └── coin_pickup_component.verse  ← пример: custom item + подбор (Custom Items)
     ├── ui/                    ← интерфейс на Verse (UMG)
     │   └── custom_hud_device.verse
+    ├── ai/                    ← поведение NPC (Scene Graph AI)
+    │   └── reactive_guard_behavior.verse
     ├── persistence/          ← сохранения между сессиями
     │   └── player_progress.verse   ← пример: прогресс игрока с версионированием
     └── utils/
@@ -94,7 +97,7 @@ UEFN создаёт Verse-файлы внутри плагина проекта:
 
 > 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md). Архитектура entity-component — в [`docs/07-scene-graph.md`](docs/07-scene-graph.md). Видео, курсы и сообщества — в [`docs/08-learning-resources.md`](docs/08-learning-resources.md). Классные фишки и приёмы топ-разработчиков — в [`docs/09-cool-features.md`](docs/09-cool-features.md).
 
-> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md) · топовый HUD и UI на Verse — [`docs/13-ui-hud.md`](docs/13-ui-hud.md) · как делать устройства правильно — [`docs/14-device-best-practices.md`](docs/14-device-best-practices.md) · данные и сохранения — [`docs/15-data-and-persistence.md`](docs/15-data-and-persistence.md) · кастомное оружие — [`docs/16-custom-weapons.md`](docs/16-custom-weapons.md) · Custom Items & Inventory — [`docs/17-custom-items-inventory.md`](docs/17-custom-items-inventory.md).
+> 🔥 **Самое свежее (2026):** релизы v40–v41 и breaking changes — [`docs/10-fresh-2026.md`](docs/10-fresh-2026.md) · Unreal Engine 6 и роадмап — [`docs/11-future-ue6-roadmap.md`](docs/11-future-ue6-roadmap.md) · продвинутые паттерны Verse — [`docs/12-advanced-patterns.md`](docs/12-advanced-patterns.md) · топовый HUD и UI на Verse — [`docs/13-ui-hud.md`](docs/13-ui-hud.md) · как делать устройства правильно — [`docs/14-device-best-practices.md`](docs/14-device-best-practices.md) · данные и сохранения — [`docs/15-data-and-persistence.md`](docs/15-data-and-persistence.md) · кастомное оружие — [`docs/16-custom-weapons.md`](docs/16-custom-weapons.md) · Custom Items & Inventory — [`docs/17-custom-items-inventory.md`](docs/17-custom-items-inventory.md) · AI/NPC через Scene Graph — [`docs/18-ai-npc-scene-graph.md`](docs/18-ai-npc-scene-graph.md).
 
 ---
 
