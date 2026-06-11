@@ -1,0 +1,90 @@
+# uefn-project
+
+Проект для разработки на **UEFN (Unreal Editor for Fortnite)** с использованием языка **Verse**.
+
+Репозиторий содержит структуру под Verse-код, примеры устройств (devices) и заметки по документации Epic Games.
+
+---
+
+## 📦 Что это
+
+[UEFN](https://dev.epicgames.com/documentation/en-us/uefn/unreal-editor-for-fortnite-documentation) — редактор от Epic Games для создания островов и игровых режимов внутри Fortnite. Логика пишется на языке **Verse**.
+
+Этот репозиторий — рабочее пространство для:
+
+- хранения и версионирования Verse-кода (`.verse`);
+- примеров устройств, написанных на Verse (Verse-authored devices);
+- заметок и шпаргалок по документации Epic.
+
+> ⚠️ Сами ассеты UEFN (`.uasset`, `.umap`), кэши и сборочные папки **не** хранятся в git — см. [`.gitignore`](.gitignore). В репозитории живёт прежде всего **код**.
+
+---
+
+## 🗂️ Структура репозитория
+
+```
+uefn-project/
+├── README.md                  ← этот файл
+├── LICENSE
+├── .gitignore                 ← игнор для UEFN/Unreal (кэши, Intermediate, Saved…)
+├── .editorconfig
+├── docs/                      ← заметки и шпаргалки на русском
+│   ├── 01-getting-started.md  ← с чего начать
+│   ├── 02-verse-basics.md     ← основы языка Verse
+│   ├── 03-devices.md          ← устройства и события
+│   └── 04-project-structure.md← как устроен проект UEFN на диске
+└── verse/                     ← исходный Verse-код
+    ├── devices/               ← устройства (creative_device)
+    │   ├── hello_world_device.verse
+    │   ├── button_interaction_device.verse
+    │   └── round_manager_device.verse
+    └── utils/
+        └── log.verse          ← вспомогательный канал логирования
+```
+
+### Куда класть Verse-файлы внутри UEFN
+
+UEFN создаёт Verse-файлы внутри плагина проекта:
+
+```
+<МойПроект>/
+└── Plugins/
+    └── <МойПроект>/
+        └── Content/
+            └── *.verse        ← сюда UEFN кладёт твои устройства
+```
+
+Файлы из папки [`verse/`](verse/) этого репозитория — это **эталонные примеры**. Их код можно копировать в `.verse`-файлы, созданные через **Verse → Verse Explorer → Add new Verse file** в UEFN.
+
+---
+
+## 🚀 Быстрый старт
+
+1. Установи **UEFN** через [Epic Games Launcher](https://store.epicgames.com/ru/download).
+2. Установи **Visual Studio Code** + официальное расширение Verse (ставится автоматически при запуске UEFN).
+3. Создай проект в UEFN (например, из шаблона **Verse Device** в Feature Examples).
+4. В **Verse → Verse Explorer** добавь новый Verse-файл и вставь код из [`verse/devices/hello_world_device.verse`](verse/devices/hello_world_device.verse).
+5. **Verse → Build Verse Code**, перетащи устройство на уровень, нажми **Launch Session**.
+6. В логе появится `Hello, world!`.
+
+Подробнее — в [`docs/01-getting-started.md`](docs/01-getting-started.md).
+
+---
+
+## 📚 Полезные ссылки (официальная документация Epic)
+
+| Тема | Ссылка |
+| --- | --- |
+| Документация UEFN | https://dev.epicgames.com/documentation/en-us/uefn/unreal-editor-for-fortnite-documentation |
+| Язык Verse — старт | https://dev.epicgames.com/documentation/en-us/fortnite/verse-language-get-started |
+| Verse API Reference | https://dev.epicgames.com/documentation/en-us/uefn/verse-api |
+| Создание устройства на Verse | https://dev.epicgames.com/documentation/en-us/fortnite/create-your-own-device-using-verse-in-unreal-editor-for-fortnite |
+| Editable-свойства | https://dev.epicgames.com/documentation/en-us/fortnite/editable-properties-in-verse |
+| Verse Glossary | https://dev.epicgames.com/documentation/en-us/fortnite/verse-glossary |
+| Релиз-ноуты Fortnite Ecosystem | https://dev.epicgames.com/documentation/en-us/fortnite/fortnite-ecosystem-updates-and-release-notes |
+
+---
+
+## 📝 Лицензия
+
+[MIT](LICENSE). Код Verse в этом репозитории — учебные примеры. Fortnite, UEFN и Verse — товарные знаки Epic Games, Inc.

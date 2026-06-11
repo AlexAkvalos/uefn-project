@@ -1,0 +1,54 @@
+# ============================================================
+# .gitignore для проектов UEFN (Unreal Editor for Fortnite)
+# Храним: Verse-код (.verse), README, docs.
+# Игнорим: кэши, сборки, бинарники, ассеты движка.
+# ============================================================
+
+# --- Папки, генерируемые UEFN/Unreal ---
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+Script/
+.vs/
+.vscode/
+!.vscode/extensions.json
+
+# --- Кэши Verse / временные файлы сборки ---
+*.vmodule
+.uefn/
+*.tmp
+
+# --- Бинарные ассеты движка (как правило, не версионируются в git) ---
+# Если используешь Git LFS — настрой .gitattributes и убери эти строки.
+*.uasset
+*.umap
+
+# --- Файлы конфигурации редактора пользователя ---
+*.opensdf
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# --- ОС ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Логи и крэш-дампы ---
+*.log
+*.dmp
+
+# --- Прочее ---
+*.bak
+*.orig
+node_modules/
