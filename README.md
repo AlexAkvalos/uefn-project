@@ -32,7 +32,9 @@ uefn-project/
 │   ├── 01-getting-started.md  ← с чего начать
 │   ├── 02-verse-basics.md     ← основы языка Verse
 │   ├── 03-devices.md          ← устройства и события
-│   └── 04-project-structure.md← как устроен проект UEFN на диске
+│   ├── 04-project-structure.md← как устроен проект UEFN на диске
+│   ├── 05-latest-tech.md      ← обзор всех технологий UEFN (Scene Graph, физика, UI, AI…)
+│   └── 06-whats-new.md        ← что нового в сезонах 38–39
 └── verse/                     ← исходный Verse-код
     ├── devices/               ← устройства (creative_device)
     │   ├── hello_world_device.verse
@@ -68,6 +70,8 @@ UEFN создаёт Verse-файлы внутри плагина проекта:
 6. В логе появится `Hello, world!`.
 
 Подробнее — в [`docs/01-getting-started.md`](docs/01-getting-started.md).
+
+> 🆕 Обзор актуальных технологий UEFN (Scene Graph, физика на Verse, кастомный UI, AI, монетизация) — в [`docs/05-latest-tech.md`](docs/05-latest-tech.md). Что нового по сезонам — в [`docs/06-whats-new.md`](docs/06-whats-new.md).
 
 ---
 
